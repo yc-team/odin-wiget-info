@@ -49,7 +49,9 @@ loading效果支持，支持全局和局部的配置
 #### 使用方式：
 
 ```html
-<bn-list title="proxy配置列表" add-btn-text="增加新配置" resource-url="/api/admin/:field" resource-index="name" grid-options="gridOptions" batch-options="batchOptions"></bn-list>
+<bn-list title="proxy配置列表" add-btn-text="增加新配置" 
+resource-url="/api/admin/:field" resource-index="name" 
+grid-options="gridOptions" batch-options="batchOptions"></bn-list>
 ```
 
 配置：
@@ -205,7 +207,7 @@ coConfirm('Are you sure to delete it?').then(function () {
 #### 使用方式：
 
 ```html
-<co-input-tip help="field.help" custom-msg="customMsg[field.field]" validator="field.validate" for="field.field"></co-input-tip>
+<co-input-tip help="field.help" custom-msg="customMsg[field.field]"      validator="field.validate" for="field.field"></co-input-tip>
 ```
 
 
