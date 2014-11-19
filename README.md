@@ -95,6 +95,12 @@ for          | ''
 validator="field.validate" for="field.field"></co-input-tip>
 ```
 
+注释：
+
+* 它是一个元素调用方式的指令(E)
+* 必须是嵌套在form里面使用，不能单独使用
+* for的意义
+
 
 ## bn-crumb
 
