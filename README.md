@@ -29,6 +29,73 @@ loading效果支持，支持全局和局部的配置
 
 > 它是一个元素调用方式的指令(E)
 
+
+## co-grid
+
+#### 使用方式：
+
+```html
+<co-grid multi-choose="gridOptions.multiChoose" 
+fields="gridOptions.fields" grid-data="gridData" 
+actions="gridOptions.actions" 
+sort="paramObj.sort" sort-by="paramObj.sortBy" 
+on-delete-item="deleteData(item, action)" 
+on-edit-item="editData(item, action)" 
+checked-data="checkedData" 
+scheme-url="gridOptions.schemeUrl" 
+scheme="gridOptions.scheme"></co-grid>
+```
+
+
+## co-sort
+
+
+
+
+## co-alert
+
+1、coConfirm
+
+只有一个参数：msg 提示的内容
+
+#### 使用方式：
+
+```js
+coConfirm('Are you sure to delete it?').then(function () {
+    //...
+});
+```
+
+2、coAlert
+
+只有一个参数：msg 提示的内容
+
+
+#### 使用方式：
+
+```js
+coAlert('alert msg').then(function () {
+    //...
+});
+```
+
+## co-input-tip
+
+属性 | 含义
+------------ | -------------
+help         | '跟在输入域后面的提示内容'
+custom-msg   | '自定义的内容'
+validator    | ''
+for          | ''
+
+#### 使用方式：
+
+```html
+<co-input-tip help="field.help" custom-msg="customMsg[field.field]"
+validator="field.validate" for="field.field"></co-input-tip>
+```
+
+
 ## bn-crumb
 
 属性 | 含义
@@ -184,70 +251,6 @@ radioOptions: [
 
 
 
-## co-grid
-
-#### 使用方式：
-
-```html
-<co-grid multi-choose="gridOptions.multiChoose" 
-fields="gridOptions.fields" grid-data="gridData" 
-actions="gridOptions.actions" 
-sort="paramObj.sort" sort-by="paramObj.sortBy" 
-on-delete-item="deleteData(item, action)" 
-on-edit-item="editData(item, action)" 
-checked-data="checkedData" 
-scheme-url="gridOptions.schemeUrl" 
-scheme="gridOptions.scheme"></co-grid>
-```
-
-
-## co-sort
-
-
-
-
-## co-alert
-
-1、coConfirm
-
-只有一个参数：msg 提示的内容
-
-#### 使用方式：
-
-```js
-coConfirm('Are you sure to delete it?').then(function () {
-    //...
-});
-```
-
-2、coAlert
-
-只有一个参数：msg 提示的内容
-
-
-#### 使用方式：
-
-```js
-coAlert('alert msg').then(function () {
-    //...
-});
-```
-
-## co-input-tip
-
-属性 | 含义
------------- | -------------
-help         | '跟在输入域后面的提示内容'
-custom-msg   | '自定义的内容'
-validator    | ''
-for          | ''
-
-#### 使用方式：
-
-```html
-<co-input-tip help="field.help" custom-msg="customMsg[field.field]"
-validator="field.validate" for="field.field"></co-input-tip>
-```
 
 
 
