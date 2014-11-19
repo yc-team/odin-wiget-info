@@ -1,7 +1,7 @@
 > 全文注释：
 
-* co-* core组件
-* bn-* 业务组件
+* co-*    core组件 和业务没有关系的
+* bn-*    业务组件
 
 ## co-loading
 
