@@ -50,10 +50,10 @@ link      | 一级导航的链接地址
 
 属性 | 含义
 ------------ | -------------
-title        | ''
-add-btn-text | ''
-resource-url | ''
-grid-options | '' 
+title        | {String} '列表上面navbar的名称'
+add-btn-text | {String} '列表上面navbar右侧的添加操作的按钮名称'
+resource-url | {String}
+grid-options | {Object}
 
 #### 使用方式：
 
@@ -67,8 +67,8 @@ grid-options的配置细节：
 
 参数 | 含义
 ------------ | -------------
-multiChoose | 是否开启全选模式
-fields | ''
+multiChoose | {Boolean} 是否开启全选模式
+fields | {Array}
 
 
 
@@ -76,12 +76,12 @@ fields的配置细节：
 
 参数 | 含义
 ------------ | -------------
-sortable    | 是否开启列头排序
-placeholder | 占位提示文本设置
-editable    | 是否在编辑和新增状态的弹窗里面编辑，如果定义true值就显示
-align       | table里面表头的对其方式
-editType    | 支持下面这些值：select、select2、text、textarea、checkbox、radio、password、number、email、url
-help        | 提醒性质的文本，放在输入域的旁边，不设置就不显示
+sortable    | {Boolean} 是否开启列头排序
+placeholder | {String}  占位提示文本设置
+editable    | {Boolean} 是否在编辑和新增状态的弹窗里面编辑，如果定义true值就显示
+align       | {String} table里面表头的对其方式
+editType    | {String} 支持下面这些值：select、select2、text、textarea、checkbox、radio、password、number、email、url
+help        | {String} 提醒性质的文本，放在输入域的旁边，不设置就不显示
 validate    | required：是否是必填项目，需要直接对应的errorMsg 举例：{ errorMsg: '请输入名称', value: true }
 
 注释：
@@ -182,9 +182,14 @@ radioOptions: [
 
 ```html
 <co-grid multi-choose="gridOptions.multiChoose" 
-fields="gridOptions.fields" grid-data="gridData" actions="gridOptions.actions" 
-sort="paramObj.sort" sort-by="paramObj.sortBy" on-delete-item="deleteData(item, action)" on-edit-item="editData(item, action)" checked-data="checkedData" 
-scheme-url="gridOptions.schemeUrl" scheme="gridOptions.scheme"></co-grid>
+fields="gridOptions.fields" grid-data="gridData" 
+actions="gridOptions.actions" 
+sort="paramObj.sort" sort-by="paramObj.sortBy" 
+on-delete-item="deleteData(item, action)" 
+on-edit-item="editData(item, action)" 
+checked-data="checkedData" 
+scheme-url="gridOptions.schemeUrl" 
+scheme="gridOptions.scheme"></co-grid>
 ```
 
 
