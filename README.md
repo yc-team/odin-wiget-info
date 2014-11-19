@@ -1,3 +1,8 @@
+全文注释：
+
+* co-* core组件
+* bn-* 业务组件
+
 ## co-loading
 
 loading效果支持，支持全局和局部的配置
