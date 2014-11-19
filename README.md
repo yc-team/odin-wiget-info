@@ -175,7 +175,10 @@ radioOptions: [
 #### 使用方式：
 
 ```html
-<co-grid multi-choose="gridOptions.multiChoose" fields="gridOptions.fields" grid-data="gridData" actions="gridOptions.actions" sort="paramObj.sort" sort-by="paramObj.sortBy" on-delete-item="deleteData(item, action)" on-edit-item="editData(item, action)" checked-data="checkedData" scheme-url="gridOptions.schemeUrl" scheme="gridOptions.scheme"></co-grid>
+<co-grid multi-choose="gridOptions.multiChoose" 
+fields="gridOptions.fields" grid-data="gridData" actions="gridOptions.actions" 
+sort="paramObj.sort" sort-by="paramObj.sortBy" on-delete-item="deleteData(item, action)" on-edit-item="editData(item, action)" checked-data="checkedData" 
+scheme-url="gridOptions.schemeUrl" scheme="gridOptions.scheme"></co-grid>
 ```
 
 
@@ -207,7 +210,8 @@ coConfirm('Are you sure to delete it?').then(function () {
 #### 使用方式：
 
 ```html
-<co-input-tip help="field.help" custom-msg="customMsg[field.field]"      validator="field.validate" for="field.field"></co-input-tip>
+<co-input-tip help="field.help" custom-msg="customMsg[field.field]"
+validator="field.validate" for="field.field"></co-input-tip>
 ```
 
 
@@ -224,7 +228,9 @@ coConfirm('Are you sure to delete it?').then(function () {
 * on-cancel
 
 ```html
-<bn-form fields="fields" datasource="formData" is-valid="isValid" custom-msg="errorInfo" on-success="ok(data)" on-cancel="cancel()"></bn-form>
+<bn-form fields="fields" datasource="formData" is-valid="isValid" 
+custom-msg="errorInfo" on-success="ok(data)" on-cancel="cancel()">
+</bn-form>
 ```
 
 
