@@ -75,7 +75,10 @@ grid-options="gridOptions" batch-options="batchOptions"></bn-list>
     	required：是否是必填项目，需要直接对应的errorMsg
     	举例：{ errorMsg: '请输入名称', value: true }
 
-
+参数 | 含义
+------------ | -------------
+sortable    | 是否开启列头排序
+placeholder | 占位提示文本设置
 
 
 
