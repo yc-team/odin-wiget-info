@@ -65,22 +65,17 @@ grid-options="gridOptions" batch-options="batchOptions"></bn-list>
 1. multiChoose      是否开启全选模式
 2. fields
 
-    sortable        是否开启列头排序
-    placeholder     占位提示文本设置
-    editable: 		是否在编辑和新增状态的弹窗里面编辑，如果定义true值就显示能编辑，如果定义false或者不定义editable这个配置，就不显示不能编辑
-    align:          table里面表头的对其方式
-    editType:       支持下面这些值：select、select2、text、textarea、checkbox、radio、password、number、email、url
-    help: 提醒性质的文本，放在输入域的旁边，不设置就不显示
-    validate：
-    	required：是否是必填项目，需要直接对应的errorMsg
-    	举例：{ errorMsg: '请输入名称', value: true }
 
 参数 | 含义
 ------------ | -------------
 sortable    | 是否开启列头排序
 placeholder | 占位提示文本设置
-
-
+editable    | 是否在编辑和新增状态的弹窗里面编辑，如果定义true值就显示
+align       | table里面表头的对其方式
+editType    | 支持下面这些值：select、select2、text、textarea、checkbox、radio、password、number、email、url
+help        | 提醒性质的文本，放在输入域的旁边，不设置就不显示
+validate    | required：是否是必填项目，需要直接对应的errorMsg
+        举例：{ errorMsg: '请输入名称', value: true }
 
 注释：
 
