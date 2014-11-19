@@ -87,10 +87,10 @@ coAlert('alert msg').then(function () {
 
 属性 | 含义
 ------------ | -------------
-help         | '跟在输入域后面的提示内容'
+help         | 跟在输入域后面的提示内容
 custom-msg   | '自定义的内容'
 validator    | ''
-for          | ''
+for          | 绑定属于域的，读取的field里面的field字段
 
 #### 使用方式：
 
@@ -103,7 +103,7 @@ validator="field.validate" for="field.field"></co-input-tip>
 
 * 它是一个元素调用方式的指令(E)
 * 必须是嵌套在form里面使用，不能单独使用
-* for的意义
+* for的意义是绑定某一个输入域
 
 
 ## bn-crumb
@@ -161,6 +161,8 @@ fields的配置细节：
 
 参数 | 含义
 ------------ | -------------
+title       | {String} 列表头的显示title
+field       | {String} `必填，需要和数据库字段一致`
 sortable    | {Boolean} 是否开启列头排序
 placeholder | {String}  占位提示文本设置
 editable    | {Boolean} 是否在编辑和新增状态的弹窗里面编辑，如果定义true值就显示
