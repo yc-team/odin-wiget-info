@@ -210,11 +210,9 @@ scheme="gridOptions.scheme"></co-grid>
 #### 使用方式：
 
 ```js
-
 coConfirm('Are you sure to delete it?').then(function () {
     //...
 });
-
 ```
 
 2、coAlert
@@ -222,7 +220,13 @@ coConfirm('Are you sure to delete it?').then(function () {
 只有一个参数：msg 提示的内容
 
 
+#### 使用方式：
 
+```js
+coAlert('alert msg').then(function () {
+    //...
+});
+```
 
 ## co-input-tip
 
