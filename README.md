@@ -79,6 +79,10 @@ coAlert('alert msg').then(function () {
 });
 ```
 
+注意：
+
+> 这个不是以E元素这种方式调用，是provider提供的服务
+
 ## co-input-tip
 
 属性 | 含义
