@@ -232,9 +232,10 @@ coAlert('alert msg').then(function () {
 
 属性 | 含义
 ------------ | -------------
-help    | ''
-errorMsg    | ''
-customMsg    | ''
+help         | '跟在输入域后面的提示内容'
+custom-msg   | '自定义的内容'
+validator    | ''
+for          | ''
 
 #### 使用方式：
 
