@@ -29,11 +29,11 @@ title    | 一级导航的显示文案
 sub-title | 二级导航的显示文案
 link      | 一级导航的链接地址
 
-> 如果不定义link，那一级导航也是一个span元素
-
 #### 使用方式：
 
 1、不带link的
+
+> 如果不定义link，那一级导航也是一个span元素
 
 ```html
 <bn-crumb title="proxy" sub-title="home"></bn-crumb>
@@ -48,6 +48,13 @@ link      | 一级导航的链接地址
 
 ## bn-list
 
+属性 | 含义
+------------ | -------------
+title        | ''
+add-btn-text | ''
+resource-url | ''
+grid-options | '' 
+
 #### 使用方式：
 
 ```html
@@ -56,20 +63,16 @@ resource-url="/api/admin/:field" resource-index="name"
 grid-options="gridOptions" batch-options="batchOptions"></bn-list>
 ```
 
-配置：
-
-* title
-* add-btn-text
-* resource-url
-* resource-index
-* grid-options
-
-1. multiChoose      是否开启全选模式
-2. fields
-
+grid-options的配置细节：
 
 参数 | 含义
 ------------ | -------------
+multiChoose | 是否开启全选模式
+fields | ''
+
+
+fields的配置细节：
+
 sortable    | 是否开启列头排序
 placeholder | 占位提示文本设置
 editable    | 是否在编辑和新增状态的弹窗里面编辑，如果定义true值就显示
