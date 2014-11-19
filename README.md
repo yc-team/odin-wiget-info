@@ -31,8 +31,16 @@ loading效果支持，支持全局和局部的配置
 
 #### 使用方式：
 
+1、不带link的
+
 ```html
 <bn-crumb title="proxy" sub-title="home"></bn-crumb>
+```
+
+2、带link的：
+
+```html
+<bn-crumb link="./admin/proxy" title="proxy" sub-title="home"></bn-crumb>
 ```
 
 
