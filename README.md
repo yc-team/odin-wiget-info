@@ -71,8 +71,11 @@ multiChoose | 是否开启全选模式
 fields | ''
 
 
+
 fields的配置细节：
 
+参数 | 含义
+------------ | -------------
 sortable    | 是否开启列头排序
 placeholder | 占位提示文本设置
 editable    | 是否在编辑和新增状态的弹窗里面编辑，如果定义true值就显示
@@ -206,9 +209,11 @@ coConfirm('Are you sure to delete it?').then(function () {
 
 ## co-input-tip
 
-* help
-* errorMsg
-* customMsg
+属性 | 含义
+------------ | -------------
+help    | ''
+errorMsg    | ''
+customMsg    | ''
 
 #### 使用方式：
 
@@ -221,14 +226,17 @@ validator="field.validate" for="field.field"></co-input-tip>
 
 ## bn-form
 
+属性 | 含义
+------------ | -------------
+fields    | ''
+datasource    | ''
+is-valid    | ''
+custom-msg    | ''
+on-success    | ''
+on-cancel    | ''
+
 #### 使用方式：
 
-* fields
-* datasource
-* is-valid
-* custom-msg
-* on-success
-* on-cancel
 
 ```html
 <bn-form fields="fields" datasource="formData" is-valid="isValid" 
