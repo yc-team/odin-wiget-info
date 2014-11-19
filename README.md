@@ -78,15 +78,16 @@ validate    | required：是否是必填项目，需要直接对应的errorMsg �
 
 注释：
 
-* 配置textarea
+#### 如何配置textarea
 
 > 支持配置rows
 
 ```js
-editType: 'textarea'
+editType: 'textarea',
+rows: 6
 ```
 
-* 配置select
+#### 如何配置select
 
 > 也支持配置placeholder
 
@@ -111,7 +112,7 @@ selectOptions: [
 ]
 ```
 
-* 配置checkbox
+#### 如何配置checkbox
 
 ```js
 editType: 'checkbox',
@@ -134,7 +135,7 @@ checkboxOptions: [
 ]
 ```
 
-* 配置radio
+#### 如何配置radio
 
 ```js
 editType: 'radio',
