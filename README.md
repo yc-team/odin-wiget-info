@@ -171,9 +171,10 @@ editType    | {String} 支持下面这些值：select、select2、text、textare
 help        | {String} 提醒性质的文本，放在输入域的旁边，不设置就不显示
 validate    | required：是否是必填项目，需要直接对应的errorMsg 举例：{ errorMsg: '请输入名称', value: true }
 
-注释：
 
-#### 如何配置textarea
+### 举例：
+
+#### 如何配置textarea呢？
 
 > 支持配置rows
 
@@ -182,7 +183,7 @@ editType: 'textarea',
 rows: 6
 ```
 
-#### 如何配置select
+#### 如何配置select呢？
 
 > 也支持配置placeholder
 
@@ -207,7 +208,7 @@ selectOptions: [
 ]
 ```
 
-#### 如何配置checkbox
+#### 如何配置checkbox呢？
 
 ```js
 editType: 'checkbox',
@@ -230,7 +231,7 @@ checkboxOptions: [
 ]
 ```
 
-#### 如何配置radio
+#### 如何配置radio呢？
 
 ```js
 editType: 'radio',
