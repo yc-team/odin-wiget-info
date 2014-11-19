@@ -203,6 +203,9 @@ scheme="gridOptions.scheme"></co-grid>
 
 ## co-alert
 
+1、coConfirm
+
+只有一个参数：msg 提示的内容
 
 #### 使用方式：
 
@@ -213,6 +216,12 @@ coConfirm('Are you sure to delete it?').then(function () {
 });
 
 ```
+
+2、coAlert
+
+只有一个参数：msg 提示的内容
+
+
 
 
 ## co-input-tip
